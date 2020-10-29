@@ -1,0 +1,80 @@
+/* Check out the JS tab for instructions!  */
+#extraOptions, #essentialOptions label, #essentialOptions, #compNameImg {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: grey;
+}
+
+#compNameImg {
+  align-items: center;
+}
+
+#companyHistory {
+  text-align: center;
+}
+
+img {
+  width: 25%;
+  -webkit-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+}
+
+section {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-rows: 5rem 14rem 5rem;
+  text-align: center;
+}
+section p {
+  font-weight: 900;
+}
+section a {
+  color: #0000FF;
+}
+section a:hover {
+  color: #2b4da1;
+}
+section a:focus {
+  color: #1d336e;
+}
+
+#essentialOptions {
+  width: 20rem;
+}
+#essentialOptions label {
+  margin: 5px;
+}
+#essentialOptions label #deliveryDate {
+  color: #d33c2c;
+}
+#essentialOptions label #custPic {
+  color: #d33c2c;
+}
+
+#extraOptions {
+  width: 20rem;
+}
+#extraOptions input {
+  color: #d33c2c;
+  margin: 5px;
+}
+
+nav {
+  text-align: center;
+}
+nav a {
+  font-weight: 900;
+  color: #0000FF;
+}
+nav a:hover {
+  color: #2b4da1;
+}
+nav a:focus {
+  color: #1d336e;
+}
+
+/*# sourceMappingURL=index.css.map */
