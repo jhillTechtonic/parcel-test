@@ -1,0 +1,104 @@
+/* Check out the JS tab for instructions!  */
+@mixin border-radius($property) {
+    -webkit-border-radius: $property;
+    -ms-border-radius: $property;
+    border-radius: $property; //50px
+}
+
+%basic-formatting {
+    display: flex;
+    flex-direction: column;
+}
+
+$link-color: #0000FF;
+$link-hover: #2b4da1;
+$link-focus: #1d336e;
+
+$eye-catching-text: #d33c2c;
+$bold-weight: 900;
+
+body {
+    background-color: grey;
+}
+
+#compNameImg {
+    @extend %basic-formatting;
+    align-items: center;
+}
+
+#companyHistory {
+    text-align: center;
+}
+
+img {
+    width: 25%;
+    @include border-radius(50px);
+    }
+
+    section {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 5rem 14rem 5rem;
+    text-align: center;
+
+    p {
+        font-weight: $bold-weight;
+    }
+
+    a {
+        color: $link-color;
+        
+        &:hover {
+            color: $link-hover;
+        }
+        
+        &:focus {
+            color: $link-focus;
+        }
+    }
+}
+
+#essentialOptions {
+    @extend %basic-formatting;
+    width: 20rem;
+
+    label {
+        @extend %basic-formatting;
+        margin: 5px;
+        
+        #deliveryDate {
+            color: $eye-catching-text;
+        }
+        
+        #custPic {
+            color: $eye-catching-text;
+        }
+    }
+}
+
+#extraOptions {
+    @extend %basic-formatting;
+    width: 20rem;
+
+    input {
+        color: $eye-catching-text;
+        margin: 5px;
+    }
+}
+
+nav {
+    text-align: center;
+
+    a {
+        font-weight: $bold-weight;
+        color: $link-color;
+        
+        &:hover {
+            color: $link-hover;
+        }
+            
+        &:focus {
+            color: $link-focus;
+        }
+    } 
+} 
